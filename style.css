@@ -7,197 +7,197 @@
 }
 
 .gurkbutikbody {
-        background-color: rgb(233, 227, 228);
-    }
+    background-color: rgb(233, 227, 228);
+  }
 
-    .startbody {
-        background-color: rgb(233, 227, 228);
-    }
+.startbody {
+    background-color: rgb(233, 227, 228);
+}
 
-    .allareceptbody {
-        background-color: rgb(212, 206, 206);
-    }
-    /*------------------------------- Header -------------------------------*/
+.allareceptbody {
+    background-color: rgb(212, 206, 206);
+}
+/*------------------------------- Header -------------------------------*/
 
-    header {
-        background: crimson;
-        padding-top: 3%;
-        padding-bottom: 1%;
-        color: white;
-    }
+header {
+    background: crimson;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: white;
+}
 
-    .rubrik {
-        display: flex;
-        justify-content: center;
+.rubrik {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    }
+.knappar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
 
-    .knappar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 3%;
-        margin-left: 2%;
-        margin-right: 2%;
-    }
-
-    .nuvarandeknapp {
-        border: 0;
-        line-height: 2.5;
-        padding: 0 2em;
-        color:rgb(255, 163, 163);
-        background-color: crimson;
-        border-radius: 10px; 
-        cursor: pointer;
-    }
+.nuvarandeknapp {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 2em;
+    color:rgb(255, 163, 163);
+    background-color: crimson;
+    border-radius: 10px; 
+    cursor: pointer;
+}
     
-    .knapp {
-        border: 0;
-        line-height: 2.5;
-        padding: 0 2em;
-        color: white;
-        background-color: crimson;
-        border-radius: 10px;
-        font-size: 15px;
-        cursor: pointer;
-    }
+.knapp {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 2em;
+    color: white;
+    background-color: crimson;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
 
-    .knapp:hover {
-        color: rgb(219, 206, 206);
-        background-color: rgb(224, 28, 67);
-    }
+.knapp:hover {
+    color: rgb(219, 206, 206);
+    background-color: rgb(224, 28, 67);
+}
 
-    .knapp:active {
-        color: white;
-        background-color: crimson;
-    }
+.knapp:active {
+    color: white;
+    background-color: crimson;
+}
 
+.searchbar {
+    width: 32em;   
+}
+
+@media (max-width:1042px) {
     .searchbar {
-        width: 32em;   
+        width: 22em;
     }
+}
 
-    @media (max-width:1042px) {
-        .searchbar {
-            width: 22em;
-        }
+@media (max-width:924px) {
+    .knappar div {
+        display: none;
     }
-
-    @media (max-width:924px) {
-        .knappar div {
-            display: none;
-        }
-        .searchbar {
-            width: 32em;
-        }
+    .searchbar {
+        width: 32em;
     }
+}
 
-    /*------------------------------  Handla ------------------------------*/
+/*------------------------------  Handla ------------------------------*/
 
+.erbjudande h1 {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    font-size: 32px;
+}
+
+@media (max-width: 480px) {
     .erbjudande h1 {
-        display: flex;
-        justify-content: center;
-        margin: 2%;
-        font-size: 32px;
+        font-size: 22px;
     }
+}
 
-    @media (max-width: 480px) {
-        .erbjudande h1 {
-            font-size: 22px;
-        }
-    }
+.allabilder {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    .allabilder {
-        display: flex;  
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.bild {
+    position: relative;
+    width: 214px;
+    height: 250px;
+    background-color: rgb(163, 147, 151);
+    padding: 0.3%;
+    margin: 1.2%;
+}
 
-    .bild {
-        position: relative;
-        width: 214px;
-        height: 250px;
-        background-color: rgb(163, 147, 151);
-        padding: 0.3%;
-        margin: 1.2%;
-    }
+.gurkbilder {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width: 100%;
+}
 
-    .gurkbilder {
-        display: flex;
-        flex-direction: row;
-        height: 250px;
-        width: 100%;
-    }
-
-    .antal {
-        top: 85%;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        background-color: rgb(117, 96, 101);
-        color: white;
-        font-size: 16px;
-        padding: 6% 40%;  
-        border: none;
-        border-radius: 20px;
-    } 
+.antal {
+    top: 85%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgb(117, 96, 101);
+    color: white;
+    font-size: 16px;
+    padding: 6% 40%;  
+    border: none;
+    border-radius: 20px;
+} 
     
-    .minusknapp {
-        top: 85%;
-        left: 25%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        background-color: crimson;
-        color: white;
-        font-size: 16px;
-        padding: 4% 8%;  
-        cursor: pointer;
-        border: none;
-        border-radius: 10px;
-    }
+.minusknapp {
+    top: 85%;
+    left: 25%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: crimson;
+    color: white;
+    font-size: 16px;
+    padding: 4% 8%;  
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
 
-    .minusknapp:hover {
-        background-color: rgb(241, 74, 107);
-    }
+.minusknapp:hover {
+    background-color: rgb(241, 74, 107);
+}
 
-    .minusknapp:active {
-        background-color: crimson;
-    }
+.minusknapp:active {
+    background-color: crimson;
+}
 
-    .plusknapp {
-        top: 85%;
-        left: 75%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        background-color: crimson;
-        color: white;
-        font-size: 16px;
-        padding: 4% 7%;  
-        border: none;
-        cursor: pointer;
-        border-radius: 10px;
-    }
+.plusknapp {
+    top: 85%;
+    left: 75%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: crimson;
+    color: white;
+    font-size: 16px;
+    padding: 4% 7%;  
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
 
-    .plusknapp:hover {
-        background-color: rgb(241, 74, 107);
-    }
+.plusknapp:hover {
+    background-color: rgb(241, 74, 107);
+}
 
-    .plusknapp:active {
-        background-color: crimson;
-    }
+.plusknapp:active {
+    background-color: crimson;
+}
 
 /*------------------------------- MEDLEM ------------------------------- */
 
-    .medlem {
-        text-align: center;
-        padding: 2%;
-        background-color: rgb(255, 255, 255);
-        margin: 2%;
-        color: black;
-    }
+.medlem {
+    text-align: center;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+    margin: 2%;
+    color: black;
+}
 
-    .medlem h1 {
-        margin: 2%;
-    }
+.medlem h1 {
+    margin: 2%;
+}
 
 .medlem h2 {
     font-size: 17px;
