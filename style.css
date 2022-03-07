@@ -29,12 +29,45 @@ header {
     padding-top: 3%;
     padding-bottom: 1%;
     color: white;
+
 }
 
 .rubrik {
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.pengarräknare {
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.räknare {
+    width: 75px;
+    height: 15px;
+    border: 0;
+    background-color: crimson;
+    color: white;
+}
+.varukorgbild {
+    position: relative;
+    top: 2px;
+    right: 4px;
+}
+.varukorg {
+    border: 0;
+    background-color: crimson;
+   
+    cursor: pointer;
+}
+
+.knappar img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
 }
 
 .knappar {
@@ -45,6 +78,7 @@ header {
     margin-left: 2%;
     margin-right: 2%;
 }
+
 
 .nuvarandeknapp {
     border: 0;
@@ -81,18 +115,33 @@ header {
     width: 32em;   
 }
 
+.handlaknapp {
+    display: none;
+}
+
 @media (max-width:1042px) {
     .searchbar {
         width: 22em;
     }
 }
 
-@media (max-width:924px) {
-    .knappar div {
+@media (max-width:1029px) {
+    .sidoknappar {
         display: none;
     }
     .searchbar {
-        width: 32em;
+        width: 42em;
+    }
+    .handlaknapp {
+        display: contents;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:400px){
+    .räknare{
+        display: none;
     }
 }
 
@@ -514,6 +563,10 @@ background-color:rgb(226, 204, 204)
     }
 }
 
+.hej {
+    margin-top: 12%; 
+}
+
 /*---------------------- INJERA RECEPT ---------------------*/
 
 .injerarecept img {
@@ -592,3 +645,23 @@ background-color:rgb(226, 204, 204)
     width: 100%;
 
 }
+
+/*---------------------- OK ---------------------*/
+
+.body222 {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 25% 50% 25%;
+}
+
+.header2 {
+    display: grid;
+}
+.main2 {
+    display: grid;
+}
+.footer2 {
+    display: grid;
+}
+    
+    

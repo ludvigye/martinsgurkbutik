@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./style.css">
+    <script defer src="./app.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,10 @@
 <body class="gurkbutikbody">
    <header>
         <div>
-            <h1 class="rubrik">MARTINS GURKBUTIK</h1>
+            <h1 class="rubrik">MARTINS GURKBUTIK</h1> 
         </div>
         <div class="knappar">
-            <div>
+            <div class="sidoknappar">
                 <a href="./index.html"><button class="knapp">Start</button></a> 
                 <a href="./handla.html"><button class="nuvarandeknapp">Handla</button></a>
                 <a href="./recept.html"><button class="knapp">Recept</button></a>
@@ -21,6 +22,10 @@
                 <a href="./Medlem.html"><button class="knapp">Medlem</button></a>
             </div>
             <input class="searchbar" type="text" placeholder="Sök t.ex recept och varor">
+            <div class="pengarräknare">
+                <button class="varukorg"><img class="varukorgbild" src="./varukorg.png" alt="varukorg"></button>
+                <button class="räknare">0 kr</button>
+            </div>
         </div>
    </header> 
    <h1 class="kant">hej</h1>
@@ -30,69 +35,69 @@
    <div class="allabilder">
         <div class="bild">
             <img class="gurkbilder" src="./gurka2" alt="En bild på en svensk gurka som kostar 20,95kr/st">    
-            <button class="antal">0</button>   
-            <button class="minusknapp">-</button>
-            <button class="plusknapp">+</button>    
+            <button class="antal aknapp1">0</button>   
+            <button class="minusknapp mknapp1" class="minus1">-</button>
+            <button class="plusknapp pknapp1" class="plus1">+</button>    
         </div>
         <div class="bild">
             <img class="gurkbilder" src="./gurka klass 1" alt="En bild på en gurka klass 1 som kostar 9,95kr/st">       
-            <button class="antal">0</button>   
-            <button class="minusknapp">-</button>
-            <button class="plusknapp">+</button>
+            <button class="antal aknapp2">0</button>   
+            <button class="minusknapp mknapp2">-</button>
+            <button class="plusknapp pknapp2">+</button>
         </div>
         <div class="bild">
             <img class="gurkbilder" src="./djungelgurka.png" alt="En bild på en djungelgurka som kostar 56,32kr/st">       
-            <button class="antal">0</button>   
-            <button class="minusknapp">-</button>
-            <button class="plusknapp">+</button>
+            <button class="antal aknapp3">0</button>   
+            <button class="minusknapp mknapp3">-</button>
+            <button class="plusknapp pknapp3">+</button>
         </div>
         <div class="bild">
             <img class="gurkbilder" src="./barudsgurka.png" alt="En bild på en barudgurka som kostar 2241kr/st">       
-            <button class="antal">0</button>   
-            <button class="minusknapp">-</button>
-            <button class="plusknapp">+</button>
+            <button class="antal aknapp4">0</button>   
+            <button class="minusknapp mknapp4">-</button>
+            <button class="plusknapp pknapp4">+</button>
         </div>
         <div class="bild">
             <img class="gurkbilder" src="./snackgurka.png" alt="En bild på en snackgurka som kostar 24,95kr /st">       
-            <button class="antal">0</button>   
-            <button class="minusknapp">-</button>
-            <button class="plusknapp">+</button>
+            <button class="antal aknapp5">0</button>   
+            <button class="minusknapp mknapp5">-</button>
+            <button class="plusknapp pknapp5">+</button>
         </div>
         <div class="bild">
             <img class="gurkbilder" src="./vildgurka.png" alt="En bild på en libanesisk vildgurka som kostar 63,95kr/st">       
-            <button class="antal">0</button>   
-            <button class="minusknapp">-</button>
-            <button class="plusknapp">+</button>
+            <button class="antal aknapp6">0</button>   
+            <button class="minusknapp mknapp6">-</button>
+            <button class="plusknapp pknapp6">+</button>
         </div>
         <div class="bild">
             <img class="gurkbilder" src="./börjesson" alt="En bild på en börjesson som kostar 21,98kr/kg">       
-            <button class="antal">0</button>   
-            <button class="minusknapp">-</button>
-            <button class="plusknapp">+</button>
+            <button class="antal aknapp7">0</button>   
+            <button class="minusknapp mknapp7">-</button>
+            <button class="plusknapp pknapp7">+</button>
         </div>
         <div class="bild">
             <img class="gurkbilder" src="./dolma" alt="En bild på ozans dolma som kostar 5,23kr/kg">       
-            <button class="antal">0</button>   
-            <button class="minusknapp">-</button>
-            <button class="plusknapp">+</button>
+            <button class="antal aknapp8">0</button>   
+            <button class="minusknapp mknapp8">-</button>
+            <button class="plusknapp pknapp8">+</button>
         </div>
         <div class="bild">
             <img class="gurkbilder" src="./rutten gurka" alt="En bild på en ruttengurka som kostar 8,88kr/st">       
-            <button class="antal">0</button>   
-            <button class="minusknapp">-</button>
-            <button class="plusknapp">+</button>
+            <button class="antal aknapp9">0</button>   
+            <button class="minusknapp mknapp9">-</button>
+            <button class="plusknapp pknapp9">+</button>
         </div>
         <div class="bild">
             <img class="gurkbilder" src="./salzgurken" alt="En bild på en salzgurken som kostar 56,89kr/st">       
-            <button class="antal">0</button>   
-            <button class="minusknapp">-</button>
-            <button class="plusknapp">+</button>
+            <button class="antal aknapp10">0</button>   
+            <button class="minusknapp mknapp10">-</button>
+            <button class="plusknapp pknapp10">+</button>
         </div>
         <div class="bild">
             <img class="gurkbilder" src="./ok" alt="En bild på 鸭舌头 som kostar 72,37kr/st">       
-            <button class="antal">0</button>   
-            <button class="minusknapp">-</button>
-            <button class="plusknapp">+</button>
+            <button class="antal aknapp11">0</button>   
+            <button class="minusknapp mknapp11">-</button>
+            <button class="plusknapp pknapp11">+</button>
         </div>
      </div>
      <h1 class="kant">-</h1>
