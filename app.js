@@ -1,5 +1,6 @@
 let räknare = 0;
 let varukorg = document.querySelector(".räknare")
+let stopp = 0;
 
 let clicked1 = 0;
 let clicked2 = 0;
@@ -49,6 +50,8 @@ let buttonm9 = document.querySelector(".mknapp9");
 let buttonm10 = document.querySelector(".mknapp10");
 let buttonm11 = document.querySelector(".mknapp11");
 
+
+
 buttonm1.addEventListener("click", function() {varukorgnegativ(20.95, clicked1)});
 buttonm2.addEventListener("click", function() {varukorgnegativ(9.95, clicked2)});
 buttonm3.addEventListener("click", function() {varukorgnegativ(56.32, clicked3)});
@@ -85,82 +88,117 @@ buttonp9.addEventListener("click", HandleClickedpositiv9);
 buttonp10.addEventListener("click", HandleClickedpositiv10);
 buttonp11.addEventListener("click", HandleClickedpositiv11);
 
-buttonp1.addEventListener("click", function() {varukorgpositiv(20.95)});
-buttonp2.addEventListener("click", function() {varukorgpositiv(9.95)});
-buttonp3.addEventListener("click", function() {varukorgpositiv(56.32)});
-buttonp4.addEventListener("click", function() {varukorgpositiv(2241)});
-buttonp5.addEventListener("click", function() {varukorgpositiv(24.95)});
-buttonp6.addEventListener("click", function() {varukorgpositiv(63.95)});
-buttonp7.addEventListener("click", function() {varukorgpositiv(21.98)});
-buttonp8.addEventListener("click", function() {varukorgpositiv(5.23)});
-buttonp9.addEventListener("click", function() {varukorgpositiv(8.88)});
-buttonp10.addEventListener("click", function() {varukorgpositiv(56.89)});
-buttonp11.addEventListener("click", function() {varukorgpositiv(72.37)});
+buttonp1.addEventListener("click", function() {varukorgpositiv1(20.95)});
+buttonp2.addEventListener("click", function() {varukorgpositiv2(9.95)});
+buttonp3.addEventListener("click", function() {varukorgpositiv3(56.32)});
+buttonp4.addEventListener("click", function() {varukorgpositiv4(2241)});
+buttonp5.addEventListener("click", function() {varukorgpositiv5(24.95)});
+buttonp6.addEventListener("click", function() {varukorgpositiv6(63.95)});
+buttonp7.addEventListener("click", function() {varukorgpositiv7(21.98)});
+buttonp8.addEventListener("click", function() {varukorgpositiv8(5.23)});
+buttonp9.addEventListener("click", function() {varukorgpositiv9(8.88)});
+buttonp10.addEventListener("click", function() {varukorgpositiv10(56.89)});
+buttonp11.addEventListener("click", function() {varukorgpositiv11(72.37)});
+
+
 
 function HandleClickedpositiv1(){
-    if(clicked1 < 999 && räknare < 10000){
+    if(clicked1 < 99){
         clicked1++;
         number1.innerHTML = clicked1;
     }
+    else if(clicked1 == 99){
+        clicked1++;
+    }
 }
 function HandleClickedpositiv2(){
-    if(clicked2 < 999 && räknare < 10000){
+    if(clicked2 < 99){
         clicked2++;
         number2.innerHTML = clicked2;
     }
+    else if(clicked2 == 99){
+        clicked2++;
+    }
 }
 function HandleClickedpositiv3(){
-    if(clicked3 < 999 && räknare < 10000){
+    if(clicked3 < 99){
         clicked3++;
         number3.innerHTML = clicked3;
     }
+    else if(clicked3 == 99){
+        clicked3++;
+    }
 }
 function HandleClickedpositiv4(){
-    if(clicked4 < 999 && räknare < 10000){
+    if(clicked4 < 99){
         clicked4++;
         number4.innerHTML = clicked4;
     }
+    else if(clicked4 == 99){
+        clicked4++;
+    }
 }
 function HandleClickedpositiv5(){
-    if(clicked5 < 999 && räknare < 10000){
+    if(clicked5 < 99){
         clicked5++;
         number5.innerHTML = clicked5;
     }
+    else if(clicked5 == 99){
+        clicked5++;
+    }
 }
 function HandleClickedpositiv6(){
-    if(clicked6 < 999 && räknare < 10000){
+    if(clicked6 < 99){
         clicked6++;
         number6.innerHTML = clicked6;
     }
+    else if(clicked6 == 99){
+        clicked6++;
+    }
 }
 function HandleClickedpositiv7(){
-    if(clicked7 < 999 && räknare < 10000){
+    if(clicked7 < 99){
         clicked7++;
         number7.innerHTML = clicked7;
     }
+    else if(clicked7 == 99){
+        clicked7++;
+    }
 }
 function HandleClickedpositiv8(){
-    if(clicked8 < 999 && räknare < 10000){
+    if(clicked8 < 99){
         clicked8++;
         number8.innerHTML = clicked8;
     }
+    else if(clicked8 == 99){
+        clicked8++;
+    }
 }
 function HandleClickedpositiv9(){
-    if(clicked9 < 999 && räknare < 10000){
+    if(clicked9 < 99){
         clicked9++;
         number9.innerHTML = clicked9;
     }
+    else if(clicked9 == 99){
+        clicked9++;
+    }
 }
 function HandleClickedpositiv10(){
-    if(clicked10 < 999 && räknare < 10000){
+    if(clicked10 < 99){
         clicked10++;
         number10.innerHTML = clicked10;
     }
+    else if(clicked10 == 99){
+        clicked10++;
+    }
 }
 function HandleClickedpositiv11(){
-    if(clicked11 < 999 && räknare < 10000){
+    if(clicked11 < 99){
         clicked11++;
         number11.innerHTML = clicked11;
+    }
+    else if(clicked11 == 99){
+        clicked11++;
     }
 }
 
@@ -168,78 +206,213 @@ function HandleClickednegativ1(){
     if(clicked1 > 0){
         clicked1--;
         number1.innerHTML = clicked1;
+        if(clicked1 == 99){
+            clicked1--;
+            number1.innerHTML = clicked1;
+        }
     }
 }
 function HandleClickednegativ2(){
     if(clicked2 > 0){
         clicked2--;
         number2.innerHTML = clicked2;
+        if(clicked2 == 99){
+            clicked2--;
+            number2.innerHTML = clicked2;
+        }
     }
 }
 function HandleClickednegativ3(){
     if(clicked3 > 0){
         clicked3--;
         number3.innerHTML = clicked3;
+        if(clicked3 == 99){
+            clicked3--;
+            number3.innerHTML = clicked3;
+        }
     }
 }
 function HandleClickednegativ4(){
     if(clicked4 > 0){
         clicked4--;
         number4.innerHTML = clicked4;
+        if(clicked4 == 99){
+            clicked4--;
+            number4.innerHTML = clicked4;
+        }
     }
 }
 function HandleClickednegativ5(){
     if(clicked5 > 0){
         clicked5--;
         number5.innerHTML = clicked5;
+        if(clicked5 == 99){
+            clicked5--;
+            number5.innerHTML = clicked5;
+        }
     }
 }
 function HandleClickednegativ6(){
     if(clicked6 > 0){
         clicked6--;
         number6.innerHTML = clicked6;
+        if(clicked6 == 99){
+            clicked6--;
+            number6.innerHTML = clicked6;
+        }
     }
 }
 function HandleClickednegativ7(){
     if(clicked7 > 0){
         clicked7--;
         number7.innerHTML = clicked7;
+        if(clicked7 == 99){
+            clicked7--;
+            number7.innerHTML = clicked7;
+        }
     }
 }
 function HandleClickednegativ8(){
     if(clicked8 > 0){
         clicked8--;
         number8.innerHTML = clicked8;
+        if(clicked8 == 99){
+            clicked8--;
+            number8.innerHTML = clicked8;
+        }
     }
 }
 function HandleClickednegativ9(){
     if(clicked9 > 0){
         clicked9--;
         number9.innerHTML = clicked9;
+        if(clicked9 == 99){
+            clicked9--;
+            number9.innerHTML = clicked9;
+        }
     }
 }
 function HandleClickednegativ10(){
     if(clicked10 > 0){
         clicked10--;
         number10.innerHTML = clicked10;
+        if(clicked10 == 99){
+            clicked10--;
+            number10.innerHTML = clicked10;
+        }
     }
 }
 function HandleClickednegativ11(){
     if(clicked11 > 0){
         clicked11--;
         number11.innerHTML = clicked11;
+        if(clicked11 == 99){
+            clicked11--;
+            number11.innerHTML = clicked11;
+        }
     }
 }
 
-function varukorgpositiv(tal){
+function varukorgpositiv1(tal){
     räknare += tal;
-    if(räknare < 10000){
+    if(räknare < 999999 && clicked1-1 < 99){
         varukorg.innerHTML = räknare.toFixed(2) + " kr";
     }
-    else {
-    räknare -= tal;
+    else {  
+        räknare -= tal;
     }
 }
+function varukorgpositiv2(tal){
+    räknare += tal;
+    if(räknare < 999999 && clicked2-1 < 99){
+        varukorg.innerHTML = räknare.toFixed(2) + " kr";
+    }
+    else {  
+        räknare -= tal;
+    }
+}
+function varukorgpositiv3(tal){
+    räknare += tal;
+    if(räknare < 999999 && clicked3-1 < 99){
+        varukorg.innerHTML = räknare.toFixed(2) + " kr";
+    }
+    else {  
+        räknare -= tal;
+    }
+}
+function varukorgpositiv4(tal){
+    räknare += tal;
+    if(räknare < 999999 && clicked4-1 < 99){
+        varukorg.innerHTML = räknare.toFixed(2) + " kr";
+    }
+    else {  
+        räknare -= tal;
+    }
+}
+function varukorgpositiv5(tal){
+    räknare += tal;
+    if(räknare < 999999 && clicked5-1 < 99){
+        varukorg.innerHTML = räknare.toFixed(2) + " kr";
+    }
+    else {  
+        räknare -= tal;
+    }
+}
+function varukorgpositiv6(tal){
+    räknare += tal;
+    if(räknare < 999999 && clicked6-1 < 99){
+        varukorg.innerHTML = räknare.toFixed(2) + " kr";
+    }
+    else {  
+        räknare -= tal;
+    }
+}
+function varukorgpositiv7(tal){
+    räknare += tal;
+    if(räknare < 999999 && clicked7-1 < 99){
+        varukorg.innerHTML = räknare.toFixed(2) + " kr";
+    }
+    else {  
+        räknare -= tal;
+    }
+}
+function varukorgpositiv8(tal){
+    räknare += tal;
+    if(räknare < 999999 && clicked8-1 < 99){
+        varukorg.innerHTML = räknare.toFixed(2) + " kr";
+    }
+    else {  
+        räknare -= tal;
+    }
+}
+function varukorgpositiv9(tal){
+    räknare += tal;
+    if(räknare < 999999 && clicked9-1 < 99){
+        varukorg.innerHTML = räknare.toFixed(2) + " kr";
+    }
+    else {  
+        räknare -= tal;
+    }
+}
+function varukorgpositiv10(tal){
+    räknare += tal;
+    if(räknare < 999999 && clicked10-1 < 99){
+        varukorg.innerHTML = räknare.toFixed(2) + " kr";
+    }
+    else {  
+        räknare -= tal;
+    }
+}
+function varukorgpositiv11(tal){
+    räknare += tal;
+    if(räknare < 999999 && clicked11-1 < 99){
+        varukorg.innerHTML = räknare.toFixed(2) + " kr";
+    }
+    else {  
+        räknare -= tal;
+    }
+}
+
 function varukorgnegativ(tal,räknarnummer){
     if(räknarnummer > 0){
         räknare -= tal;
