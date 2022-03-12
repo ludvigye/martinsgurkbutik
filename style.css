@@ -78,6 +78,27 @@ header {
     margin-right: 2%;
 }
 
+.signorlogin{
+    display: flex;
+    position: absolute;
+    top: 71.5%;
+    left: 30%;
+}
+
+.uselessbuttons{
+    border: 0;
+    background-color: white;
+}
+.medlembutton{
+    border: 0;
+    color: crimson;
+    background-color: white;
+    cursor: pointer;
+}
+.medlembutton:hover{
+    color: rgb(228, 145, 161);
+    text-decoration: underline;
+}
 
 .nuvarandeknapp {
     border: 0;
@@ -149,11 +170,44 @@ header {
     visibility: hidden;
     position: absolute;
     left: 68%;
-    width: 30%;
+    width: 380px;
     height: 500px;
     background-color: white;
     z-index: 1;
     padding: 2px;
+}
+@media(max-width:1200px){
+    .varor{
+        left: 60%;
+    }
+}
+@media(max-width:1000px){
+    .varor{
+        left: 50%;
+    }
+}
+@media(max-width:800px){
+    .varor{
+        left: 40%;
+    }
+}
+@media(max-width:668px){
+    .varor{
+        left: 20%;
+    }
+}
+@media(max-width:518px){
+    .varor{
+        left: 0%;
+    }
+}
+@media(max-width:668px){
+    .varor{
+        width: 320px;
+    }
+    .varukorgstext{
+        font-size: 12px;
+    }
 }
 .items{
     position: absolute;
@@ -299,10 +353,7 @@ header {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.varukorgstext{
-    display: flex;
-    flex-direction: column;
-}
+
 .tabortallavaror {
     position: absolute;
     top: 347px;
