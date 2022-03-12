@@ -124,7 +124,7 @@ header {
     }
 }
 
-@media (max-width:1029px) {
+@media (max-width:1050px) {
     .sidoknappar {
         display: none;
     }
